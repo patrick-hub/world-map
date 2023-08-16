@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo {
+  height: 5.4rem;
+}
