@@ -1,3 +1,4 @@
+import { useParams, useSearchParams } from "react-router-dom";
 import BackButton from "./BackButton";
 import styles from "./City.module.css";
 
@@ -10,7 +11,12 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function City() {
-  // TEMP DATA
+  const {id} = useParams()
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(setSearchParams);
+
+  const lat = searchParams.get('lat');
+  const lng = searchParams.get('lng')
   const currentCity = {
     cityName: "Lisbon",
     emoji: "🇵🇹",
@@ -21,6 +27,9 @@ function City() {
   const { cityName, emoji, date, notes } = currentCity;
 
   return (
+    <>
+    <h3>Cit {id}</h3>
+    <p>Position: {lng}, {lat}</p>
     <div className={styles.city}>
       <div className={styles.row}>
         <h6>City name</h6>
@@ -56,6 +65,7 @@ function City() {
         <BackButton />
       </div>
     </div>
+    </>
   );
 }
 
