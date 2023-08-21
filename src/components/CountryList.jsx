@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import styles from './CountryList.module.css';
 import Spinner from './Spinner';
 import Message from './Message';
@@ -26,9 +26,8 @@ function CountryList() {
   );
 }
 
-CountryList.propTypes = {
-  cities: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-};
+// CountryList.propTypes = {
+//   isLoading: PropTypes.bool.isRequired,
+// };
 
 export default CountryList;

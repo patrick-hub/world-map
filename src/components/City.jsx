@@ -1,6 +1,9 @@
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BackButton from "./BackButton";
 import styles from "./City.module.css";
+import { useEffect } from "react";
+import { useCities } from "../contexts/CitiesContext";
+import { Spinner } from "@syncfusion/ej2-react-popups";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -12,24 +15,21 @@ const formatDate = (date) =>
 
 function City() {
   const {id} = useParams()
-  const [searchParams, setSearchParams] = useSearchParams();
-  console.log(setSearchParams);
+  const {getCity, currentCity, isLoading} = useCities()
 
-  const lat = searchParams.get('lat');
-  const lng = searchParams.get('lng')
-  const currentCity = {
-    cityName: "Lisbon",
-    emoji: "🇵🇹",
-    date: "2027-10-31T15:59:59.138Z",
-    notes: "My favorite city so far!",
-  };
+  
+  useEffect(function() {
+    getCity(id);
+  },[id])
+ 
 
   const { cityName, emoji, date, notes } = currentCity;
 
+  if (isLoading) return <Spinner />
+
+
   return (
     <>
-    <h3>Cit {id}</h3>
-    <p>Position: {lng}, {lat}</p>
     <div className={styles.city}>
       <div className={styles.row}>
         <h6>City name</h6>
