@@ -25,7 +25,6 @@ function Map() {
 		getPosition,
 	} = useGeolocation();
 
-	console.log(geolocationPosition);
 
 	const mapLat = searchParams.get("lat");
 	const mapLng = searchParams.get("lng");
