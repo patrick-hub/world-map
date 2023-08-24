@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./Map.module.css";
 import { useCities } from "../contexts/CitiesContext";
-import { useGeolocation } from "../hooks/useGeolocation";
+import { useGeolocation } from "../contexts/hooks/useGeolocation";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import {
@@ -13,7 +13,7 @@ import {
 	useMap,
 	useMapEvents,
 } from "react-leaflet";
-import { useUrlPosition } from "../hooks/useUrlPosition";
+import { useUrlPosition } from "../contexts/hooks/useUrlPosition";
 
 function Map() {
 	const { cities } = useCities();
@@ -24,7 +24,7 @@ function Map() {
 		getPosition,
 	} = useGeolocation();
 
-	const [mapLat, mapLng] = useUrlPosition()
+	const [mapLat, mapLng] = useUrlPosition();
 
 	useEffect(
 		function () {

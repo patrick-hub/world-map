@@ -1,53 +1,64 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "cityName": "Castello de la Plana",
+      "countryName": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-23T22:09:22.874Z",
+      "notes": "patrick",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "40.03326642638116",
+        "lng": "-0.0029182434082031254"
       },
-      "id": 73930385
+      "id": 98443210
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
+      "cityName": "Castello de la Plana",
+      "countryName": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2023-08-23T22:09:57.823Z",
+      "notes": "patr",
+      "position": {
+        "lat": "40.0227507233359",
+        "lng": "0.0008583068847656251"
+      },
+      "id": 98443211
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "countryName": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-24T08:15:24.015Z",
+      "notes": "laliga",
+      "position": {
+        "lat": "40.00079396953218",
+        "lng": "-0.001373291015625"
+      },
+      "id": 98443212
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "countryName": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-24T10:37:17.984Z",
+      "notes": "ppp",
+      "position": {
+        "lat": "40.059942746746174",
+        "lng": "-0.0017166137695312502"
+      },
+      "id": 98443213
+    },
+    {
+      "cityName": "Lagos",
+      "countryName": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2023-08-24T10:37:35.376Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "6.616864857159944",
+        "lng": "3.322677612304688"
       },
-      "id": 17806751
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
-      "cityName": "Abuja",
-      "country": "Nigeria",
-      "emoji": "🇳🇬",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930344
+      "id": 98443214
     }
-   
   ]
 }
